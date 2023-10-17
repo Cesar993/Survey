@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <title>Alumnos</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Dubmited Info</h1>
+        <div class="card-item">
+            <label for="Nombre">Nombre:</label>
+            <span>@ViewBag.nombreNuevo</span>
+        </div>
+        <div class="card-item">
+            <label for="Dojo">Dojo Location:</label>
+            <span>@ViewBag.dojoNuevo </span> 
+        </div>
+        <div class="card-item">
+            <label for="Lenguage">Lenguaje Favorito:</label>
+            <span>@ViewBag.lengNuevo</span> 
+        </div>
+        <div class="card-item">
+            <label for="coments">Comentarios(opcional):</label>
+            <span>@ViewBag.comNuevo</span>
+        </div>
+        <form action="volver" method="GET">
+        <button>Go back</button>
+        </form>
+    </div>
+</body>
+
+</html>

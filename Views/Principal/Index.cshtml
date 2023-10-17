@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <div class="block1">
+        <form action="/nuevo/alumno" method="POST">
+        <label for="Nombre"> Nombre</label>
+        <input type="text" id="Nombre" name="Nombre">
+        <label for="Dojo"> Dojo Location</label>
+        <select name="Dojo" id="Dojo">
+            <option value="1">Dojo 1</option>
+            <option value="2">Dojo 2</option>
+        </select>
+        <label for="Lenguage"> Lenguage Favorito:</label>
+        <select name="Lenguage" id="Lenguage">
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+        </select>
+        <label for="coments">Comentarios(opcional)</label>
+        <textarea name="Coments" id="Coments" cols="30" rows="10"></textarea>
+        <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
