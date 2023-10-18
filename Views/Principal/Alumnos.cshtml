@@ -1,3 +1,5 @@
+@model DojoSurvey.Models.Survey
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,22 +13,22 @@
 
 <body>
     <div class="card">
-        <h1>Dubmited Info</h1>
+        <h1>Submited Info</h1>
         <div class="card-item">
             <label for="Nombre">Nombre:</label>
-            <span>@ViewBag.nombreNuevo</span>
+            <span>@Model.Name</span>
         </div>
         <div class="card-item">
             <label for="Dojo">Dojo Location:</label>
-            <span>@ViewBag.dojoNuevo </span> 
+            <span>@Model.Dojo </span> 
         </div>
         <div class="card-item">
             <label for="Lenguage">Lenguaje Favorito:</label>
-            <span>@ViewBag.lengNuevo</span> 
+            <span>@Model.Lenguage</span> 
         </div>
         <div class="card-item">
             <label for="coments">Comentarios(opcional):</label>
-            <span>@ViewBag.comNuevo</span>
+            <span>@Model.Comment</span>
         </div>
         <form action="volver" method="GET">
         <button>Go back</button>
